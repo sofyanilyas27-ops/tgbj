@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telur Gulung Berkah Jaya</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+--red:#D62828;
+--gold:#F9C74F;
+--white:#ffffff;
+--dark:#222;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Segoe UI,Arial,sans-serif;
+background:#fff;
+color:#333;
+line-height:1.6;
+overflow-x:hidden;
+}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,var(--red),var(--gold));
+color:white;
+position:relative;
+}
+.hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:radial-gradient(circle at top right,rgba(255,255,255,.2),transparent 40%);
+}
+.hero-content{max-width:900px;position:relative;z-index:2}
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+text-shadow:2px 2px 10px rgba(0,0,0,.2);
+}
+.hero p{font-size:1.2rem;margin-bottom:25px}
+.cta{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+.btn{
+background:white;
+color:var(--red);
+padding:14px 24px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+.btn:hover{transform:translateY(-5px)}
+section{
+padding:90px 8%;
+}
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:2.4rem;
+color:var(--red);
+}
+.glass{
+background:rgba(255,255,255,.9);
+backdrop-filter:blur(10px);
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+padding:30px;
+}
+.about p{font-size:1.1rem;text-align:center}
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.card{
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+border-top:5px solid var(--gold);
+}
+.card:hover{
+transform:translateY(-10px);
+}
+.card h3{
+color:var(--red);
+margin-bottom:10px;
+}
+.card ul{
+padding-left:18px;
+}
+.locations{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:25px;
+}
+.loc-card{
+background:linear-gradient(135deg,#fff,#fff7e0);
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.loc-card h3{color:var(--red)}
+.mapbtn{
+display:inline-block;
+margin-top:10px;
+padding:10px 18px;
+background:var(--red);
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+.order-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+.order-btn{
+padding:20px;
+border-radius:20px;
+text-decoration:none;
+color:white;
+font-size:1.1rem;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+transition:.3s;
+animation:pulse 2.5s infinite;
+}
+.order-btn:hover{transform:scale(1.05)}
+.wa{background:#25D366}
+.ig{background:#E1306C}
+.tt{background:#000}
+.sf{background:#EE4D2D}
+.gf{background:#00B14F}
+.go{background:#00AA13}
+@keyframes pulse{
+50%{transform:scale(1.03)}
+}
+footer{
+background:#1f1f1f;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+.float-wa{
+position:fixed;
+right:20px;
+bottom:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:35px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+z-index:999;
+animation:bounce 2s infinite;
+}
+@keyframes bounce{
+50%{transform:translateY(-8px)}
+}
+.badge{
+display:inline-block;
+background:white;
+color:var(--red);
+padding:8px 16px;
+border-radius:30px;
+margin-bottom:20px;
+font-weight:bold;
+}
+@media(max-width:768px){
+.hero h1{font-size:2.5rem}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="hero-content">
+<div class="badge">Berdiri Sejak 2021</div>
+<h1>TELUR GULUNG BERKAH JAYA</h1>
+<p>Gurih • Renyah • Lezat • Favorit Pelanggan</p>
+
+<div class="cta">
+<a class="btn" href="#about">Tentang Kami</a>
+<a class="btn" href="#menu">Daftar Menu</a>
+<a class="btn" href="#lokasi">Lokasi</a>
+<a class="btn" href="#pesan">Pesan Online</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<h2 class="title">Tentang Kami</h2>
+<div class="glass">
+<p>
+Telur Gulung Berkah Jaya hadir sejak tahun <b>2021</b> sebagai pilihan jajanan favorit yang menghadirkan cita rasa gurih, renyah, dan lezat dalam setiap gulungan. Kami berkomitmen menghadirkan kualitas terbaik dengan bahan pilihan dan proses yang higienis.
+<br><br>
+Kini kami melayani pelanggan melalui <b>2 outlet</b> yaitu Outlet Pengging dan Outlet UMS, serta tersedia di berbagai platform online agar pelanggan semakin mudah menikmati menu favorit kapan saja.
+</p>
+</div>
+</section>
+
+<section id="menu">
+<h2 class="title">Daftar Menu</h2>
+<div class="menu-grid">
+
+<div class="card">
+<h3>Paket Mix Hemat</h3>
+<ul>
+<li>Paket A</li><li>Paket B</li><li>Paket C</li>
+<li>Paket D</li><li>Paket E</li><li>Paket F</li>
+<li>Paket G</li><li>Paket H</li><li>Paket I</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Paket Original</h3>
+<ul>
+<li>Original 1 (10 Telur Gulung)</li>
+<li>Original 2 (15 Telur Gulung)</li>
+<li>Original 3 (20 Telur Gulung)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Paket Bilung</h3>
+<ul>
+<li>Bilung 1 (10 Bihun)</li>
+<li>Bilung 2 (16 Bihun)</li>
+<li>Bilung 3 (22 Bihun)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Paket Sosis</h3>
+<ul>
+<li>Sosis 1 (10 Sosis)</li>
+<li>Sosis 2 (15 Sosis)</li>
+<li>Sosis 3 (20 Sosis)</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="lokasi">
+<h2 class="title">Lokasi & Jam Operasional</h2>
+
+<div class="locations">
+
+<div class="loc-card">
+<h3>📍 Outlet Pengging</h3>
+<p>Jl. Pengging-Banyudono, Bendan, Banyudono, Boyolali. Barat Daya Alun-Alun Pengging, depan Toko Ilma Shop Selatan Jalan.</p>
+<p><b>Jam Operasional:</b> 16:15 - 21:00 WIB</p>
+<p><b>WhatsApp:</b> 087813869567</p>
+<a class="mapbtn" href="https://maps.app.goo.gl/Wp8zwmJtohhKkUQP8" target="_blank">Google Maps</a>
+</div>
+
+<div class="loc-card">
+<h3>📍 Outlet UMS</h3>
+<p>Jl. Garuda Mas No.1, Gonilan, Kartasura, Sukoharjo. Selatan Kampus 4 Kedokteran UMS, depan Alfamart Barat Jalan.</p>
+<p><b>Jam Operasional:</b> 16:30 - 23:00 WIB</p>
+<p><b>WhatsApp:</b> 089630909921</p>
+<a class="mapbtn" href="https://maps.app.goo.gl/sAQUdtw4U6Hvkfqg6" target="_blank">Google Maps</a>
+</div>
+
+</div>
+</section>
+
+<section id="pesan">
+<h2 class="title">Pesan Online</h2>
+
+<div class="order-grid">
+
+<a class="order-btn wa" href="https://wa.me/6287813869567"><i class="fab fa-whatsapp"></i> WA Pengging</a>
+
+<a class="order-btn wa" href="https://wa.me/6289630909921"><i class="fab fa-whatsapp"></i> WA UMS</a>
+
+<a class="order-btn ig" href="https://www.instagram.com/telurgulung.bj"><i class="fab fa-instagram"></i> Instagram</a>
+
+<a class="order-btn tt" href="https://www.tiktok.com/@telurgulung.bj"><i class="fab fa-tiktok"></i> TikTok</a>
+
+<a class="order-btn sf" href="https://shopee.co.id/universal-link/now-food/shop/22500464"><i class="fas fa-bag-shopping"></i> ShopeeFood</a>
+
+<a class="order-btn gf" href="https://r.grab.com/g/6-20260530_203855_09D0ADC3000A402383D301C2604F33F6_MEXMPS-6-C7V3VJ3UUAX1GE"><i class="fas fa-motorcycle"></i> GrabFood</a>
+
+<a class="order-btn go" href="https://gofood.link/a/Qb2CE71"><i class="fas fa-utensils"></i> GoFood</a>
+
+</div>
+</section>
+
+<footer>
+<h3>Telur Gulung Berkah Jaya</h3>
+<p>Berdiri Sejak 2021</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<a href="https://wa.me/6287813869567" class="float-wa">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
